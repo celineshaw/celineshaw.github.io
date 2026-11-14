@@ -7,6 +7,7 @@ Portfolio site: **https://celineshaw.github.io**
 
 | Project | What it is |
 | --- | --- |
+| [`projects/sales-demo-agent`](projects/sales-demo-agent) | AI agent prototype: customer spec → gdsfactory layouts → spec sheet |
 | [`projects/photonic-demo`](projects/photonic-demo) | Ring resonator and Mach-Zehnder interferometer laid out in gdsfactory, exported to GDS, with modeled spectra |
 | [`projects/cqd-field-model`](projects/cqd-field-model) | Coupled quantum dots as neural electric-field sensors: feasibility model (UC Merced, NASA-funded) |
 
