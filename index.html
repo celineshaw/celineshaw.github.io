@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Celine Augustine Shaw</title>
-<meta name="description" content="Celine Augustine Shaw: materials engineer in photonics, quantum devices and technical sales. gdsfactory layouts, quantum dot research, cleanroom work, TEDxUCLA.">
+<meta name="description" content="Celine Augustine Shaw: technical sales and solutions engineering for photonic and quantum chip design. Discovery-led selling, foundry-PDK demos, quantum dot research, TEDxUCLA.">
 <meta property="og:title" content="Celine Augustine Shaw">
-<meta property="og:description" content="Photonics, quantum devices and technical sales.">
+<meta property="og:description" content="Technical sales and solutions engineering for photonic and quantum chip design.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://celineshaw.github.io/">
 <meta property="og:image" content="https://celineshaw.github.io/og-image.png">
@@ -64,7 +64,10 @@ nav a:hover{color:var(--nv)}
 .hero h1{font-size:clamp(2.5rem,7vw,4.8rem);font-weight:300;letter-spacing:-.01em;max-width:18ch}
 .hero h1 em{font-style:italic;color:var(--nv)}
 .hero .lede{font:300 clamp(1.15rem,2.3vw,1.4rem)/1.5 var(--display);color:var(--ink-2);max-width:40rem;margin-top:22px}
-.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;padding-top:20px;border-top:1px solid var(--rule)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,max-content));gap:10px 48px;margin-top:30px;padding-top:20px;border-top:1px solid var(--rule)}
+.facts span:first-child{grid-column:1/-1}
+@media (max-width:720px){.facts{grid-template-columns:1fr}}
+.facts span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--nv);margin-right:10px;vertical-align:middle}
 .facts span{font:400 .82rem var(--mono);color:var(--ink-2)}
 .facts b{color:var(--ink);font-weight:500}
 
@@ -243,6 +246,12 @@ svg .lyr5{fill:var(--ink)}
 .skills-inline{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .skills-inline li{font:400 .78rem var(--mono);background:var(--surface);border:1px solid var(--rule);padding:4px 9px;border-radius:2px;color:var(--ink)}
 .talk .body blockquote{margin:0;font:300 italic clamp(1.4rem,3vw,1.9rem)/1.3 var(--display);color:var(--ink);text-wrap:balance}
+.physics{background:var(--surface);border:1px solid var(--rule);padding:18px 20px;display:grid;gap:10px;max-width:var(--col)}
+.physics ul{margin:0;padding-left:1.1rem;display:grid;gap:10px;font-size:.92rem;line-height:1.55;color:var(--ink-2)}
+.physics b{color:var(--ink);font-weight:600}
+.physics .refs{font-size:.76rem;line-height:1.5;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:10px;margin:0}
+.physics .refs .label{display:block;margin-bottom:4px}
+.slides{align-items:start}
 footer{padding-block:28px 48px;border-top:1px solid var(--rule)}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </style>
@@ -252,39 +261,29 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <header class="top"><div class="wrap">
   <span class="who">Celine Augustine Shaw</span>
-  <nav aria-label="Sections"><a href="#about">About</a><a href="#sales">Sales</a><a href="#photonics">Photonics</a><a href="#quantum">Quantum</a><a href="#fab">Fab</a><a href="#more">Hardware</a><a href="#papers">Papers</a><a href="#talk">Story</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Sections"><a href="#sales">Sales</a><a href="#agent">Demo</a><a href="#about">About</a><a href="#photonics">Photonics</a><a href="#quantum">Quantum</a><a href="#fab">Fab</a><a href="#more">Hardware</a><a href="#papers">Papers</a><a href="#talk">Story</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main class="wrap">
   <div class="hero">
-    <p class="label acc">Sales engineering · AI agents · photonics &amp; quantum</p>
-    <h1 style="margin-top:14px">From a customer's question to a <em>working</em> chip layout.</h1>
-    <p class="lede">I've always been the translator in the room, turning physics into a talk and a lab result into a pitch. Now I want to build the platforms that do it at scale: AI agents and demo tools that let a photonics or quantum team see their own design come to life in minutes.</p>
+    <p class="label acc">Technical sales · Solutions engineering · Photonic &amp; quantum EDA</p>
+    <h1 style="margin-top:14px">Turning complex photonics workflows into fast customer <em>wins</em>.</h1>
+    <p class="lede">With a background in quantum optics, nanofabrication and GDSFactory, I bridge the gap between engineering teams and commercial adoption: scoping customer pain, building live foundry PDK proofs of concept, and accelerating tape-out decisions.</p>
+    <div class="btnrow" style="margin-top:26px"><a class="btn" href="#sales">How I'd sell GDSFactory+</a><a class="btn ghost" href="#agent">See the demo</a></div>
     <div class="facts">
+      <span><b>Seeking</b> · technical sales / solutions engineering</span>
       <span><b>B.S. Materials Science &amp; Engineering</b> · UCLA</span>
-      <span><b>NASA-funded quantum research</b> · UC Merced</span>
-      <span><b>TEDxUCLA speaker</b> · 2026</span>
-      <span><b>Founder</b> · l'Ballet du Célestin</span>
+      <span><b>MassChallenge Gold</b> · AR optics &amp; SPIE Photonics West</span>
+      <span><b>NASA-funded quantum photonics</b> · device modeling &amp; sensing</span>
+      <span><b>TEDxUCLA speaker (2026)</b> · selected from 150+ applicants</span>
     </div>
   </div>
 
-  <section id="about" aria-labelledby="about-h" style="padding-top:44px">
-    <div class="sechead"><p class="label acc">About</p><h2 id="about-h">Where I've worked, and where I'm headed</h2>
-      <div class="intro" style="display:grid;gap:14px">
-        <p>My expertise is in materials and nanofabrication, quantum optics, quantum programming and topological structures. I spent time in a quantum optics lab working on coupled quantum dots and the advantages of quantum photonics for sensing, then joined an AR company building toward brain–computer interfaces.</p>
-        <p>I'm exploring the industries that will define the future, especially energy, aerospace, medicine, and semiconductor and technology sales. I want to help build cutting-edge companies that hold real technological leads and open new frontiers in design and industry.</p>
-        <div class="about-tags">
-          <div><p class="label">Expertise</p><ul><li>Materials &amp; nanofabrication</li><li>Quantum optics</li><li>Quantum programming</li><li>Topological structures</li></ul></div>
-          <div><p class="label">Interests</p><ul><li>Energy</li><li>Aerospace</li><li>Medicine</li><li>Semiconductor &amp; tech sales</li></ul></div>
-        </div>
-      </div></div>
-  </section>
-
-  <section id="sales" aria-labelledby="sales-h">
+  <section id="sales" aria-labelledby="sales-h" style="padding-top:44px">
     <div class="sechead"><p class="label acc">Technical sales</p><h2 id="sales-h">How I'd sell GDSFactory+</h2>
       <div class="intro" style="display:grid;gap:14px">
-        <p>For years I've been on the builder's side: modeling devices, sketching process stacks, debugging hardware. The part I keep coming back to is the moment a hard idea clicks for someone else, whether it's a TEDx audience, a class of rocketry students or a venue partner for my ballet company.</p>
-        <p>In EDA sales, explaining the physics is maybe a third of the job. Teams don't buy GDSFactory+ because a ring resonator looks good. They buy it because jumping between Lumerical, KLayout, Virtuoso and home-made Python scripts is delaying tape-outs, burying engineers in DRC fixes and risking six-figure respins. My job is to find that pain, prove the fix on their own design, and make it easy for everyone in the room to say yes.</p>
+        <p>My background is in photonic devices, quantum optics and nanofabrication, so when I sit across from an engineering team, I don't need a script to understand their stack. What drives me is turning technical complexity into clear commercial decisions: finding where a team is losing weeks to fragmented workflows, proving a better path on their actual design, and building consensus from the IC designer up to the VP of Engineering.</p>
+        <p>In EDA sales, explaining the physics is only a third of the job. Teams don't buy GDSFactory+ because a ring resonator looks good. They buy it because jumping between Lumerical, KLayout, Virtuoso and fragile internal Python scripts delays tape-outs, buries engineers in manual DRC fixes and risks six-figure respins. My job is to quantify that cost, demonstrate the fix on their PDK, and make it easy for everyone in the room to say yes.</p>
       </div></div>
 
     <div class="playbook">
@@ -333,11 +332,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="proof">
       <div><p class="label">Evidence I can sell</p>
         <ul>
-          <li><b>TEDxUCLA speaker.</b> Selected from more than 150 applicants; I wrote the talk and edited the final video myself.</li>
-          <li><b>Founder, l'Ballet du Célestin.</b> Built a chamber ballet company from nothing: pitching, partnerships, programming and filling seats, including a 2026 master class with Katz Conservatory.</li>
-          <li><b>Gold award, MassChallenge (Boston).</b> Won gold presenting Kura's augmented reality optics, and presented the technology at SPIE Photonics West.</li>
-          <li><b>Swarovski Foundation global finalist.</b> Pitched quantum optical sensing to an international panel.</li>
-          <li><b>Teaching, ENGR 96R at UCLA.</b> Taught undergraduates rocket engineering, which is technical explanation under pressure.</li>
+          <li><b>B.S. Materials Science &amp; Engineering</b> · UCLA</li>
+          <li><b>MassChallenge Gold</b> · AR optics &amp; SPIE Photonics West</li>
+          <li><b>NASA-funded quantum photonics</b> · device modeling &amp; sensing; pitched to NASA MACES, a Swarovski/UN global panel and Caltech FUTURE of Physics; co-authored Scheibner Lab manuscripts in preparation</li>
+          <li><b>TEDxUCLA speaker (2026)</b> · selected from 150+ applicants</li>
+          <li><b>Swarovski Foundation global shortlisted finalist (UN Office for Partnerships)</b> · one of 12 shortlisted from thousands of applicants worldwide; pitched quantum optical sensing to an international panel</li>
+          <li><b>Founder, l'Ballet du Célestin</b> · built a chamber ballet company from nothing: pitching, partnerships and filling seats</li>
+          <li><b>Caltech FUTURE of Physics Scholar</b> · selected to explore graduate research in quantum physics</li>
         </ul>
       </div>
       <div><p class="label">My first 90 days</p>
@@ -380,6 +381,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
             <tr><td>WG.W features narrower than 150 nm</td><td class="ok">0</td><td class="ok">0</td></tr>
             <tr><td>WG.X crossed or overlapping routes</td><td class="ok">0</td><td class="ok">0</td></tr>
           </tbody></table></div>
+        <div class="physics">
+          <p class="label acc">Device physics &amp; foundry validation</p>
+          <ul>
+            <li><b>Resonant wavelength demultiplexing</b> (<i>m</i>λ<sub><i>m</i></sub> = 2π<i>R</i>·<i>n</i><sub>eff</sub>). Four microrings (6.47–6.54 µm radius) sit on a shared 450 nm strip bus on 220 nm SOI. Stepping each radius by 23 nm shifts its optical path length, so each ring drops its own C-band channel (λ<sub>1</sub>–λ<sub>4</sub>). Each ring's FSR (~14 nm) is wider than the 12.8 nm channel band, so neighbouring resonance orders can't drop a second channel.</li>
+            <li><b>Evanescent coupling and the 270 vs 200 nm gap.</b> Power transfer from bus to ring falls off exponentially with the edge-to-edge gap <i>g</i>. The Cornerstone PDK's default coupling gap is 270 nm; the 200 nm gap from a generic script falls below it and trips 128 spacing checks, the kind of tight feature that risks fabrication variation on a multi-project wafer.</li>
+            <li><b>Grating couplers at 127 µm pitch.</b> Input, through and drop ports end in Cornerstone's grating couplers (70&nbsp;nm etch): a 350 µm taper into 60 periods of 630 nm, spaced 127 µm apart for a standard fiber array. That 350 µm taper is why the couplers dwarf the ~13 µm rings in the layout.</li>
+          </ul>
+          <p class="refs"><span class="label">References</span>
+            1. CORNERSTONE Standard Components Library, SOI platform (University of Southampton). ·
+            2. L. Chrostowski &amp; M. Hochberg, <i>Silicon Photonics Design: From Devices to Systems</i>, Cambridge University Press, 2015 (§4.4 ring resonators; §5.2 grating couplers). ·
+            3. W. Bogaerts et al., “Silicon microring resonators,” <i>Laser &amp; Photonics Reviews</i> 6, 47–73 (2012).</p>
+        </div>
         <p>The 200 nm column is the gap from my first, generic version of this demo. On this foundry's PDK it trips 128 spacing checks, which is exactly the kind of error that otherwise gets found by hand the week before tape-out.</p>
         <h3>Wired into GDSFactory+</h3>
         <p>The agent starts GDSFactory+'s MCP server and picks up its eleven tools, including <code>check_drc</code>, <code>check_lvs</code> and <code>simulate_component</code>. With a GDSFactory+ project open, it runs foundry sign-off DRC on the same design. Setting this up, I found that <code>gfp-mcp</code> 0.4.1 doesn't start with version 2 of the MCP library, so the project pins <code>mcp&lt;2</code>.</p>
@@ -390,6 +403,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <div class="sechead"><p class="label acc">About</p><h2 id="about-h">Where I've worked, and where I'm headed</h2>
+      <div class="intro" style="display:grid;gap:14px">
+        <p>My expertise is in materials and nanofabrication, quantum optics, quantum programming and topological structures. I spent time in a quantum optics lab working on coupled quantum dots and the advantages of quantum photonics for sensing, then joined an AR company building toward brain–computer interfaces.</p>
+        <p>I'm exploring the industries that will define the future, especially energy, aerospace, medicine, and semiconductor and technology sales. I want to help build cutting-edge companies that hold real technological leads and open new frontiers in design and industry.</p>
+        <div class="about-tags">
+          <div><p class="label">Expertise</p><ul><li>Materials &amp; nanofabrication</li><li>Quantum optics</li><li>Quantum programming</li><li>Topological structures</li></ul></div>
+          <div><p class="label">Interests</p><ul><li>Energy</li><li>Aerospace</li><li>Medicine</li><li>Semiconductor &amp; tech sales</li></ul></div>
+        </div>
+      </div></div>
   </section>
 
   <section aria-labelledby="index-h">
@@ -485,6 +510,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="g2">
           <figure><img src="img/mathematica-eigen.jpg" alt="Mathematica notebook computing eigenvalues of two quantum dot molecule Hamiltonians and plotting PL energy against electric field" loading="lazy"><figcaption><b>Eigenenergies</b>Two dot molecules anticross at 20 and 10 kV/cm. Black: t = 1 meV; red: t = 500 µeV.</figcaption></figure>
           <figure><img src="img/mathematica-dipole.jpg" alt="Mathematica density plot of the electric field around a dipole on a nanometer scale" loading="lazy"><figcaption><b>Dipole field</b>Field map of a charge configuration across ±10 nm.</figcaption></figure>
+        </div>
+        <h3>The pitch</h3>
+        <p>I turned this modeling into a technical presentation for the NASA-funded MACES program: the problem (no non-invasive sensor fine enough to read a single neuron), the Hamiltonian model, and a clear yes-or-no answer backed by two numbers.</p>
+        <div class="g2 slides">
+          <figure><img src="img/maces-cover.jpg" alt="MACES title slide: Coupled Quantum Dots as Neural E-field Sensors, by Celine A. Shaw, Michael Scheibner and Mark Woodall, Quantum Matters Group, UC Merced" loading="lazy"><figcaption><b>Title</b>Presented to the Merced Nanomaterials Center for Energy and Sensing.</figcaption></figure>
+          <figure><img src="img/maces-motivation.jpg" alt="Motivation slide: concept sketch of a quantum-dot sensor over the head, an EEG cap, an invasive implant crossed out, and a coupled quantum dot micrograph" loading="lazy"><figcaption><b>Motivation</b>Why a non-invasive, quantum-enhanced sensor.</figcaption></figure>
+          <figure><img src="img/maces-methodology.jpg" alt="Methodology slide: action potential, dot geometry, PL energy versus field, the two-level Hamiltonian and Gauss's law for a line charge" loading="lazy"><figcaption><b>Methodology</b>From action potential to Hamiltonian.</figcaption></figure>
+          <figure><img src="img/maces-results.jpg" alt="Results slide: step-by-step calculation of the neuron's field, 2.24e-3 kV/cm, against the sensor's resolution, 1.7e-3 kV/cm" loading="lazy"><figcaption><b>Results</b>Neuron field against sensor resolution.</figcaption></figure>
+        </div>
+        <div class="physics">
+          <p class="label acc">Pitch, recognition &amp; forthcoming publications</p>
+          <ul>
+            <li>I pitched this sensor concept and its device modeling to NASA's MUREP-funded MACES program, earning funded research support in the Scheibner Lab at UC Merced. Co-authored manuscripts with the lab are in preparation.</li>
+            <li>Turning the same physics into a clear commercial and societal pitch led to my selection as a global shortlisted finalist for the Swarovski Foundation and UN Office for Partnerships Creatives for Our Future programme, and as a Caltech FUTURE of Physics Scholar, exploring graduate research in quantum physics.</li>
+          </ul>
         </div>
         <div class="result">
           <div><p class="label">Neuron field at 4 mm</p><p class="v">2.2×10⁻³<small>kV/cm</small></p></div>
