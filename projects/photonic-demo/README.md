@@ -20,4 +20,4 @@ pip install gdsfactory matplotlib
 python photonic_demo.py
 ```
 
-Next step: replace the analytic models with gdsfactory simulation plugins and a foundry PDK.
+`simulate_mzi_sax.py` checks the MZI against a [sax](https://github.com/flaport/sax) circuit simulation of the netlist gdsfactory extracts from the layout itself: simulated FSR 14.36 nm vs 14.37 nm analytic.

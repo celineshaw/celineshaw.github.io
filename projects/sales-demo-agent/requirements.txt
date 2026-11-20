@@ -1,0 +1,5 @@
+cspdk==1.4.2        # Cornerstone foundry PDK; pins gdsfactory 9.34
+matplotlib
+anthropic
+gfp-mcp              # GDSFactory+ MCP server (needs the GDSFactory+ VS Code extension or Cloud workspace)
+mcp<2                # gfp-mcp 0.4.1 is not compatible with mcp 2.x

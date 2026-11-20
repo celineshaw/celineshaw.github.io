@@ -1,0 +1,38 @@
+[
+  {
+    "target_GHz": 6.8,
+    "length_um": 4462.2,
+    "simulated_GHz": 6.7998,
+    "f0_GHz": 6.79987,
+    "depth_dB": -16.4,
+    "linewidth_kHz": 110.5,
+    "loaded_Q": 61500
+  },
+  {
+    "target_GHz": 7.0,
+    "length_um": 4334.3,
+    "simulated_GHz": 6.9998,
+    "f0_GHz": 6.99992,
+    "depth_dB": -16.8,
+    "linewidth_kHz": 119.6,
+    "loaded_Q": 58500
+  },
+  {
+    "target_GHz": 7.2,
+    "length_um": 4213.5,
+    "simulated_GHz": 7.2001,
+    "f0_GHz": 7.19998,
+    "depth_dB": -17.2,
+    "linewidth_kHz": 129.1,
+    "loaded_Q": 55800
+  },
+  {
+    "target_GHz": 7.4,
+    "length_um": 4099.3,
+    "simulated_GHz": 7.3999,
+    "f0_GHz": 7.39991,
+    "depth_dB": -17.7,
+    "linewidth_kHz": 139.1,
+    "loaded_Q": 53200
+  }
+]

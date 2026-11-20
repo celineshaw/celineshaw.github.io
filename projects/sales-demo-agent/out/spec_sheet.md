@@ -1,24 +1,29 @@
 # Design summary for a WDM demux team
 
-Platform: 220 nm SOI, 500 nm strip waveguide, C-band (n_g = 4.18).
+PDK: Cornerstone Si220 C-band (cspdk)
 
-## All-pass ring resonator
-- **radius_um**: 18.3
-- **gap_um**: 0.2
-- **fsr_nm**: 5.0
-- **intrinsic_q_estimate**: 368000
-- **footprint_um**: [42.6, 38.4]
-- **ports**: ['o2', 'o1']
-- **gds**: out/ring_R18.3um.gds
+## Channel plan
+- 4 channels x 3.2 nm = 12.8 nm band at 1550 nm
+- ring FSR 14.08 nm > band 12.8 nm, so each ring drops exactly one channel
+- MZI FSR = 2 x 3.2 nm = 6.4 nm
 
-## Unbalanced mach-zehnder interferometer
-- **delta_length_um**: 28.74
-- **fsr_nm**: 20.0
-- **footprint_um**: [91.1, 60.1]
-- **ports**: ['o1', 'o2']
-- **gds**: out/mzi_dL28.74um.gds
+## Layout
+- Ring radii: 6.466, 6.489, 6.513, 6.536 um (step 23.4 nm)
+- Coupling gap: 0.27 um
+- 6 grating couplers at 127 um fiber-array pitch
+- Footprint: 636.0 x 508.0 um
+- GDS: out/demux_4ch_gap270nm.gds
 
-## Notes
-Ring sized for 5 nm channel spacing; MZI interleaves every other channel.
+## Verification
+- WG.S spacing < 0.27 um: 0
+- WG.W width < 0.15 um: 0
+- WG.X crossed or overlapping routes: 0
+- Result: PASS, 0 violations
 
-Next step: run these on your foundry PDK in GDSFactory+ for DRC and circuit simulation.
+## Assumptions
+- n_g = 4.2, n_eff = 2.4 for the PDK strip waveguide; confirm with the PDK's mode solver in GDSFactory+.
+
+## Questions for your team
+- How many engineer-hours per tape-out go into fixing DRC errors by hand today?
+- When Cornerstone updates a PDK layer, who updates your scripts, and how long does it take?
+- What did your last respin cost, in money and in schedule?
